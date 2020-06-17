@@ -1,0 +1,15 @@
+{
+  "name": "musicrift",
+  "version": "1.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "Ankit Kumar, acadbase",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^9.0.4"
+  }
+}

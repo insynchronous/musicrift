@@ -1,0 +1,81 @@
+html{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.titlebar{
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    -webkit-app-region: drag;
+    z-index: 99;
+    position: fixed;
+
+}
+.userregion{
+    height: calc(100% - 80px);
+    width: 100%;
+}
+
+.sidebar{
+    width: 150px;
+    height: 100%;
+    float: left;
+    background-color: #0b0b0e ;
+}
+.mainplane{
+    width: calc(100% - 150px);
+    height: 100%;
+    float: right;
+    background-color: #000000;
+}
+
+.audiobar{
+    width: 100%;
+    height: 80px;
+    background-color: #0D0E10;
+}
+.winbuttons{
+    height: 100% !important;
+    float: right;
+    -webkit-app-region: no-drag;
+    font-size: 0px !important;
+}
+.closebutton{
+    height: 100% !important;
+    width: 30px !important;
+    margin: 0px !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    padding: 0px !important;
+    background-color: transparent !important;
+}
+.minimizebutton{
+    height: 100% !important;
+    width: 30px !important;
+    margin: 0px !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    padding: 0px !important;
+    background-color: transparent !important;
+    
+}
+
+.minimizebutton :hover{
+    background-image: radial-gradient(red, rgb(192, 191, 247), transparent 70%);
+}
+.closebutton :hover{
+    background-image: radial-gradient(red, rgb(221, 124, 124), transparent 75%);
+}
+
+.logoimg{
+    margin-left: 14px;
+    margin-top: 5px;
+    -webkit-app-region: drag;
+}
