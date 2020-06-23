@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/mdb.min.css">
     <!-- Your custom styles (optional) -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/css/all.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
@@ -17,13 +18,29 @@
 
     <div class="titlebar">
         <div class="winbuttons">
-            <button class="minimizebutton btn" onclick="minimizewindow()"><img src="img/img-min.png" class="img-fluid" width="70%" draggable="false"></button>
-            <button class="closebutton btn" onclick="closewindow()"><img src="img/img-close.png" class="img-fluid" width="70%" draggable="false"></button>
+            <button class="minimizebutton btn" onclick="minimizewindow()"><img src="img/img-min.png" class="img-fluid"
+                    width="70%" draggable="false"></button>
+            <button class="closebutton btn" onclick="closewindow()"><img src="img/img-close.png" class="img-fluid"
+                    width="70%" draggable="false"></button>
         </div>
     </div>
     <div class="userregion">
         <div class="sidebar">
-            <img src="img/musicriftfinal.png" class="img-fluid logoimg" alt="" width="80%" draggable="false">
+            <img src="img/musicrift11.png" class="img-fluid logoimg noselect" alt="" width="80%" draggable="false">
+            <div class="tabbuttons">
+                <button onclick="changeactive(this.id)" class="btn navbtn navactive" id="homebtn" type="button"><i
+                        class="fa fa-home" aria-hidden="true"></i> &nbsp;&nbsp;
+                    Home</button>
+                <button onclick="changeactive(this.id)" class="btn navbtn" id="playlistbtn" type="button"><i
+                        class="fa fa-list" aria-hidden="true"></i> &nbsp;&nbsp;
+                    Playlist</button>
+                <button onclick="changeactive(this.id)" class="btn navbtn" id="streambtn" type="button"><i
+                        class="fas fa-stream"></i>&nbsp;&nbsp; Stream</button>
+                <button onclick="changeactive(this.id)" class="btn navbtn" id="settingsbtn" type="button"><i
+                        class="fa fa-cog" aria-hidden="true"></i>
+                    &nbsp;&nbsp;Settings</button>
+            </div>
+
 
         </div>
         <div class="mainplane">
@@ -31,6 +48,20 @@
         </div>
     </div>
     <div class="audiobar">
+        <div class="audio_playing_desc">
+
+        </div>
+        <div class="audio_controls">
+            <audio id="main_audio_player">
+            </audio>
+            <div class="ctrl_btn">
+                
+            </div>
+            <div class="ctrl_slider">
+                <input type="range" id="audio_slider" class="audio_sl">
+            </div>
+            
+        </div>
 
     </div>
     <!-- custom scripts -->
