@@ -18,3 +18,13 @@ function changeactive(btnvalue) {
     });
     document.getElementById(value).classList.add('navactive');
 }
+
+function volumedisptoggle(){
+    if(document.getElementById('vol_ctrl').classList.contains('hider')){
+        document.getElementById('vol_ctrl').classList.remove('hider')
+    }
+    else{
+        document.getElementById('vol_ctrl').classList.add('hider')
+    }
+    
+}

@@ -28,16 +28,19 @@
         <div class="sidebar">
             <img src="img/musicrift11.png" class="img-fluid logoimg noselect" alt="" width="80%" draggable="false">
             <div class="tabbuttons">
-                <button onclick="changeactive(this.id)" class="btn navbtn navactive" id="homebtn" type="button"><i
-                        class="fa fa-home" aria-hidden="true"></i> &nbsp;&nbsp;
+                <button onclick="changeactive(this.id)" class="btn navbtn navactive" id="homebtn" type="button"
+                    data-target="#carousel-example-1z" data-slide-to="0"><i class="fa fa-home" aria-hidden="true"></i>
+                    &nbsp;&nbsp;
                     Home</button>
-                <button onclick="changeactive(this.id)" class="btn navbtn" id="playlistbtn" type="button"><i
-                        class="fa fa-list" aria-hidden="true"></i> &nbsp;&nbsp;
+                <button onclick="changeactive(this.id)" class="btn navbtn" id="playlistbtn" type="button"
+                    data-target="#carousel-example-1z" data-slide-to="1"><i class="fa fa-list" aria-hidden="true"></i>
+                    &nbsp;&nbsp;
                     Playlist</button>
-                <button onclick="changeactive(this.id)" class="btn navbtn" id="streambtn" type="button"><i
-                        class="fas fa-stream"></i>&nbsp;&nbsp; Stream</button>
-                <button onclick="changeactive(this.id)" class="btn navbtn" id="settingsbtn" type="button"><i
-                        class="fa fa-cog" aria-hidden="true"></i>
+                <button onclick="changeactive(this.id)" class="btn navbtn" id="streambtn" type="button"
+                    data-target="#carousel-example-1z" data-slide-to="2"><i class="fas fa-stream"></i>&nbsp;&nbsp;
+                    Stream</button>
+                <button onclick="changeactive(this.id)" class="btn navbtn" id="settingsbtn" type="button"
+                    data-target="#carousel-example-1z" data-slide-to="3"><i class="fa fa-cog" aria-hidden="true"></i>
                     &nbsp;&nbsp;Settings</button>
             </div>
 
@@ -45,6 +48,70 @@
         </div>
         <div class="mainplane">
 
+            <!--Carousel Wrapper-->
+            <div id="carousel-example-1z" class="carousel  carousel-fade" data-ride="carousel" data-interval="false">
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+                    <!--First slide-->
+                    <div class="carousel-item active">
+                        <div class="contentplane">
+                            <div class="content_view">
+
+                            </div>
+                        </div>
+                        <div class="recentplane">
+                            <div class="recentlist">
+                                <div class="played-text noselect"> Recently Listened </div>
+                                <div style="width: 100%; height: 8px;"></div>
+                                <div class="recentlistview">
+
+                                </div>
+                            </div>
+                            <div class="addmusic">
+                                <!-- <div class="avtardetails">
+                                    <div class="avtarimg">
+                                        <img class="" width="60px" height="60px" style="border-radius: 50%;" src="img/sb.jfif" alt="">
+                                    </div>
+                                    <div class="avtarname text-uppercase">
+                                        Ankit kumar
+                                    </div>
+                                </div>  -->
+                                    <div style="width: 100%; height: 15px;"></div>
+                                    <div class="row">
+                                        <div class="col">
+                                                <button class="btn  clearbtn"><i class="fas fa-broom"></i> Recents</button>
+                                        </div>
+                                           <div class="col">
+                                                <button class="btn  clearbtn clearQbtn"><i class="fas fa-broom"></i> Queue</button>
+                                           </div> 
+                                    </div>
+
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <!--/First slide-->
+                    <!--Second slide-->
+                    <div class="carousel-item">
+                        dfsdfdsf
+                    </div>
+                    <!--/Second slide-->
+                    <!--Third slide-->
+                    <div class="carousel-item">
+                        sdfsdffsdf
+                    </div>
+                    <!--/Third slide-->
+                    <!--F slide-->
+                    <div class="carousel-item">
+                        sdfsdfsdfsdf
+                    </div>
+                    <!--/F slide-->
+
+                </div>
+                <!--/.Slides-->
+
+            </div>
+            <!--/.Carousel Wrapper-->
         </div>
     </div>
     <div class="audiobar">
@@ -55,12 +122,32 @@
             <audio id="main_audio_player">
             </audio>
             <div class="ctrl_btn">
-                
+                <div class="vol">
+                    <div class="slidearea" onmouseover="volumedisptoggle()" onmouseout="volumedisptoggle()">
+                        <button class="btn volbtn cbtn"> <i class="fas fa-volume-down"></i> </button>
+                        <input type="range" class="vol_slider hider" id="vol_ctrl">
+                    </div>
+
+                </div>
+                <div class="ctrl_btn_pos">
+                    <button class="btn nonplay cbtn"><i class="fa fa-random" aria-hidden="true"></i></button>
+                    <button class="btn nonplay cbtn"><i class="fa fa-step-backward " aria-hidden="true"></i></button>
+                    <button class="btn playbtn cbtn"><i class="fa fa-play-circle playbtn "
+                            aria-hidden="true"></i></button>
+                    <button class="btn nonplay cbtn"><i class="fa fa-step-forward " aria-hidden="true"></i></button>
+                    <button class="btn nonplay cbtn"> <i class="fa fa-retweet" aria-hidden="true"></i> </button>
+                </div>
+                <div class="timelabel">
+                    <div class="timetext"><span class="currtime">03:00 /</span>
+                        <sapn class="total_time"> 4:00</sapn>
+                    </div>
+                </div>
+
             </div>
             <div class="ctrl_slider">
                 <input type="range" id="audio_slider" class="audio_sl">
             </div>
-            
+
         </div>
 
     </div>
