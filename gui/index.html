@@ -56,22 +56,24 @@
                     <div class="carousel-item active">
                         <div class="contentplane">
                             <div class="content_view">
-                               <div class="currentsonginfo">
+                                <div class="currentsonginfo">
                                     <div class="curr_albumart noselect">
-                                            <img class="curr_albumart" width="200" height="200" src="https://picsum.photos/200" draggable="false"></img>
+                                        <img class="curr_albumart" width="200" height="200"
+                                            src="https://picsum.photos/200" draggable="false"></img>
                                     </div>
-                                   <div class="currsongdetails noselect" id="currsongdetails">
-                                        <div class="songname"  id="songname">Chann Kitthan</div>
+                                    <div class="currsongdetails noselect" id="currsongdetails">
+                                        <div class="songname" id="songname">Chann Kitthan</div>
                                         <div class="album" id="album">Unclassified </div>
                                         <div class="artist" id="artist">Ayushman Khurana</div>
                                         <div class="genere" id="genere">Rock/Romantic</div>
                                         <button class="btn addtoplaylist">+ Playlist</button>
-                                   </div>
-                               </div>
-                               <div class="upcommingsong noselect">
-                                   <div class="upcoming_albumart">
-                                        <img style="border-radius: 8px;" width="60" height="60" src="https://picsum.photos/60" draggable="false"></img>
-                                   </div>
+                                    </div>
+                                </div>
+                                <div class="upcommingsong noselect">
+                                    <div class="upcoming_albumart">
+                                        <img style="border-radius: 8px;" width="60" height="60"
+                                            src="https://picsum.photos/60" draggable="false"></img>
+                                    </div>
                                     <div class="upcoming_details">
                                         <div class="upcoming_songname">
                                             Song Name
@@ -83,19 +85,29 @@
                                             Upcoming
                                         </div>
                                     </div>
-                               </div>
-                               <div class="queuetag">
-                                   Queue
-                               </div>
-                               <div class="loaded_deck noselect">
-                                   <div style="padding-top: 10px;">
-                                   <div class="imgb" style="display: inline-block;"><img class="listimg"  width="190" height="190" src="https://picsum.photos/190" draggable="false"></img></div>
-                                   <div class="imgb" style="display: inline-block;"><img class="listimg"  width="190" height="190" src="https://picsum.photos/190" draggable="false"></img></div>
-                                   <div class="imgb" style="display: inline-block;"><img class="listimg"  width="190" height="190" src="https://picsum.photos/190" draggable="false"></img></div>
-                                   <div class="imgb" style="display: inline-block;"><img class="listimg"  width="190" height="190" src="https://picsum.photos/190" draggable="false"></img></div>
-                                   <div class="imgb" style="display: inline-block;"><img class="listimg"  width="190" height="190" src="https://picsum.photos/190" draggable="false"></img></div>
                                 </div>
-                               </div>
+                                <div class="queuetag noselect">
+                                    Queue
+                                </div>
+                                <div class="loaded_deck noselect">
+                                    <div style="padding-top: 10px;">
+                                        <div class="imgb" style="display: inline-block;"><img class="listimg"
+                                                width="190" height="190" src="https://picsum.photos/190"
+                                                draggable="false"></img></div>
+                                        <div class="imgb" style="display: inline-block;"><img class="listimg"
+                                                width="190" height="190" src="https://picsum.photos/190"
+                                                draggable="false"></img></div>
+                                        <div class="imgb" style="display: inline-block;"><img class="listimg"
+                                                width="190" height="190" src="https://picsum.photos/190"
+                                                draggable="false"></img></div>
+                                        <div class="imgb" style="display: inline-block;"><img class="listimg"
+                                                width="190" height="190" src="https://picsum.photos/190"
+                                                draggable="false"></img></div>
+                                        <div class="imgb" style="display: inline-block;"><img class="listimg"
+                                                width="190" height="190" src="https://picsum.photos/190"
+                                                draggable="false"></img></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="recentplane">
@@ -115,24 +127,76 @@
                                         Ankit kumar
                                     </div>
                                 </div>  -->
-                                    <div style="width: 100%; height: 22px;"></div>
-                                    <div class="row">
-                                        <div class="col">
-                                                <button class="btn  clearbtn"><i class="fas fa-broom"></i> Recents</button>
-                                        </div>
-                                           <div class="col">
-                                                <button class="btn  clearbtn clearQbtn"><i class="fas fa-broom"></i> Queue</button>
-                                           </div> 
+                                <div style="width: 100%; height: 22px;"></div>
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn  clearbtn"><i class="fas fa-broom"></i> Recents</button>
                                     </div>
+                                    <div class="col">
+                                        <button class="btn  clearbtn clearQbtn"><i class="fas fa-broom"></i>
+                                            Queue</button>
+                                    </div>
+                                </div>
 
-                                    
+
                             </div>
                         </div>
                     </div>
                     <!--/First slide-->
                     <!--Second slide-->
-                    <div class="carousel-item">
-                        dfsdfdsf
+
+                    <!-- Add playlist modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header" style="border-radius: 0px !important;">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">ADD PLAYLIST</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span><img src="img/img-close.png" height="20" width="20"
+                                                style="margin-bottom: 5px !important;"></span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="text" class="form-control playlistname" placeholder="Enter a name">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="noofsel">0</div>
+                                            <div class="songtext">Songs added</div>
+                                        </div>
+                                        <div class="col">
+                                            <button class="btn btn-primary"
+                                                style="margin-top: 25px; margin-left: 30px; background:linear-gradient(135deg, #FF57B9 0%,#A704FD 100%);" onclick="addplaylist_browse()">
+                                                ADD <i class="fa fa-music" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer" style="border-radius: 0px !important;">
+                                    <button type="button" class="btn playlistmodaladd"
+                                        style="padding: 5px !important; margin: 0px auto;">create</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- /Add playlist modal -->
+
+
+
+                    <div class="carousel-item ">
+                        <div class="playlistplane">
+                            <div class="playlistplane_content">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card addnewplaylist noselect" data-toggle="modal"
+                                            data-target="#exampleModalCenter">
+                                            <img style="margin: auto auto; padding: 0px !important;" class="img-fluid"
+                                                height="150" width="150" src="img/add_playlist.png" draggable="false">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!--/Second slide-->
                     <!--Third slide-->
