@@ -30,3 +30,12 @@ function volumedisptoggle(){
 }
 
 
+
+// functional contents
+
+function addplaylist_browse(){
+    const { dialog } = require('electron').remote;
+    dialog.showOpenDialog({ properties: ['openFile', 'multiSelections'] });
+}
+
+
