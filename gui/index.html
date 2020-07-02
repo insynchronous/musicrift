@@ -158,10 +158,10 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <input type="text" class="form-control playlistname" placeholder="Enter a name">
+                                    <input type="text" id="playlistnametoadd" class="form-control playlistname" placeholder="Enter a name">
                                     <div class="row">
                                         <div class="col">
-                                            <div class="noofsel">0</div>
+                                            <div class="noofsel" id="noofsel">0</div>
                                             <div class="songtext">Songs added</div>
                                         </div>
                                         <div class="col">
@@ -172,7 +172,7 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer" style="border-radius: 0px !important;">
-                                    <button type="button" class="btn playlistmodaladd"
+                                    <button type="button" class="btn playlistmodaladd"  onclick="addPlaylistToDB()"
                                         style="padding: 5px !important; margin: 0px auto;">create</button>
                                 </div>
                             </div>
