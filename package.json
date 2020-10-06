@@ -10,7 +10,7 @@
   "author": "Ankit Kumar, acadbase",
   "license": "ISC",
   "dependencies": {
-    "electron": "^9.0.4",
+    "electron": "^9.3.1",
     "handlebars": "^4.7.6",
     "lowdb": "^1.0.0",
     "uuid": "^8.2.0"
